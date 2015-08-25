@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:libmp3lame.a">
+   </FileRef>
+   <FileRef
+      location = "group:libzbar.a">
+   </FileRef>
+   <FileRef
+      location = "group:lame.h">
+   </FileRef>
+   <FileRef
+      location = "self:baby.xcodeproj">
+   </FileRef>
+</Workspace>

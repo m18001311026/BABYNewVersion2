@@ -1,0 +1,45 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+
+#ifdef __OBJC__
+
+    #import <Availability.h>
+    #import "Constants.h"
+    #import "AppDelegate.h"
+    #import "NavigationControl.h"
+
+    #import "Shared.h"
+    #import "UI.h"
+    #import "IMG.h"
+    #import "Voice.h"
+    #import "TOOL.h"
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    extern float screentHeight, screentContentHeight;
+    extern float osVersion;
+    extern bool iOSNotSupport, iOS5, iOS7;
+    extern bool largeScreen;
+
+    extern AppDelegate *delegate;
+    extern NavigationControl *ctr;
+
+#endif
+
+
+#ifdef DEBUG
+#define DLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#define LogFunc NSLog(@"%s", __func__)
+#else
+#define DLog(format, ...)
+#define LogFunc ;
+#endif
+
+#define kScreen_height [UIScreen mainScreen].bounds.size.height  //高度
+#define kScreen_width [UIScreen mainScreen].bounds.size.width    //宽度
+
+
